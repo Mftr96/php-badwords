@@ -43,7 +43,15 @@ esecuzione:
 - nel secondo file all'inizio (prima anche di !DOCTYPE) apro un tag <?php con dentro :
 dichiarazione valore tramite $ e nome valore= $_GET(funzione per andare a richiamare il valore ) [qui dentro inseriamo valore dell'attributo name che vogliamo andare a stampare]
 
-fatte le dichiarazioni andiamo a dichiarare dentro al tag p aprendo un tag <?php ?> nel quale all'interno andiamo ad usare il comando echo per andare a stampare in pagina la variabile che ci serve : in questo caso ho usato strlen per stampare in pagina il numero di caratteri del testo inviato dalla pagina precedente 
+fatte le dichiarazioni andiamo a dichiarare dentro al tag p aprendo un tag <?php ?> nel quale all'interno andiamo ad usare il comando echo per andare a stampare in pagina la variabile che ci serve : in questo caso ho usato strlen per stampare in pagina il numero di caratteri del testo inviato dalla pagina precedente
+
+
+echo str_replace(
+        $nome,
+        $nome,
+        "****"
+
+    ) 
 
 
 

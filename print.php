@@ -18,13 +18,19 @@ $nome=$_GET["nome"]
     caratteri
     </p>
 
-    <p> il nome è<?php 
+    <p> il paragrafo è lungo
+    <?php 
+     echo strlen($nome)
+    ?> caratteri,
+    <?php
     echo str_replace(
         $nome,
         $nome,
         "****"
 
     ) 
+
+    
     ?></p>
     
 </body>
