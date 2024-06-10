@@ -18,7 +18,14 @@ $nome=$_GET["nome"]
     caratteri
     </p>
 
-    <p><?php echo $nome ?></p>
+    <p> il nome è<?php 
+    echo str_replace(
+        $nome,
+        $nome,
+        "****"
+
+    ) 
+    ?></p>
     
 </body>
 </html>

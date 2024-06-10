@@ -33,5 +33,18 @@ XAMPP non si chiude? Stoppate apache, chiudete XAMPP terminando il processo, ed 
 Avete cambiato qualcosa in configurazione ma non notate differenza in browser? Provate da un altro browser oppure svuotate la cache.
 VSCode vi chiede cose strane? Ignoratelo!
 Buon lavoro a tutti!  
+-----------------
+esecuzione:
+-creazione di due file php(come se fossereo due normali html di base)
+-nel primo vado ad inserire il tag form che avrà attributo action con valore il nome del secondo file php e avrà come attributo methods il valore GET
+-inserisco il tag input con l'attributo  name(serve poi nel secondo file per andare a richiamare i dati inviati)
+-inserisco il tag button con l'attributo type di valore "submit"
+-inserisco il tag textarea semrpe col name
+- nel secondo file all'inizio (prima anche di !DOCTYPE) apro un tag <?php con dentro :
+dichiarazione valore tramite $ e nome valore= $_GET(funzione per andare a richiamare il valore ) [qui dentro inseriamo valore dell'attributo name che vogliamo andare a stampare]
+
+fatte le dichiarazioni andiamo a dichiarare dentro al tag p aprendo un tag <?php ?> nel quale all'interno andiamo ad usare il comando echo per andare a stampare in pagina la variabile che ci serve : in questo caso ho usato strlen per stampare in pagina il numero di caratteri del testo inviato dalla pagina precedente 
+
+
 
 
